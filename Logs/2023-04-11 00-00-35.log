@@ -1,0 +1,10 @@
+Script Start 
+Traceback (most recent call last):
+  File "E:\GitHub\Studio-Clock\scriptv2.py", line 438, in <module>
+    image = Image.open(phantommedialogofile)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\joshu\AppData\Local\Programs\Python\Python311\Lib\site-packages\PIL\Image.py", line 3236, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/phantom/Documents/Clock/PhantomRadioSquare.png'
+ 

@@ -1,0 +1,11 @@
+Script Start 
+Traceback (most recent call last):
+  File "e:\GitHub\Studio-Clock\scriptv2.py", line 537, in <module>
+    my_w.mainloop()
+  File "C:\Users\joshu\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\joshu\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1943, in __call__
+    def __call__(self, *args):
+    
+KeyboardInterrupt
+ 

@@ -1,0 +1,30 @@
+﻿{
+    "now": {
+       "uid": "27161",
+        "artist":"Misha B",
+        "title": "Home Run",
+        "year": "2012",
+        "album": "",
+        "category": "General",
+        "type": "Song",
+        "schedulerType": "Song",
+        "duration": "00:03:14",
+        "intro": "00:00:00",
+        "airtime": "2022-06-09 15:55:38",
+        "airtimeutc": "2022-06-09 14:55:38"
+    },
+    "next": {
+       "uid": "7",
+        "artist":"Misha B",
+        "title": "Home Run",
+        "year": "",
+        "album": "",
+        "category": "Sweepers",
+        "type": "Sweepers",
+        "schedulerType": "Production",
+        "duration": "00:00:00",
+        "intro": "00:00:00",
+        "airtime": "2022-06-09 15:55:38",
+        "airtimeutc": "2022-06-09 14:55:38"
+    }
+}
