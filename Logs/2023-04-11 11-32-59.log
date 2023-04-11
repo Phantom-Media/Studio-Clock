@@ -1,0 +1,12 @@
+2023-04-11 11:32:59.911633+01:00 Script Start 
+2023-04-11 11:33:20.308907+01:00 Traceback (most recent call last):
+  File "c:\Users\joshu\OneDrive - University of Derby Students Union\Phantom Radio\- Technical Management\Studio-Clock\scriptv2.py", line 538, in <module>
+    my_w.mainloop()
+  File "C:\Users\joshu\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+  File "C:\Users\joshu\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 1943, in __call__
+    def __call__(self, *args):
+    
+KeyboardInterrupt
+ 
+2023-04-11 11:33:20.310909+01:00 Written Uptime to File 

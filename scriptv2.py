@@ -8,23 +8,27 @@ import feedparser
 from PIL import Image, ImageTk
 from threading import Thread
 import traceback
+import csv
 import hidden
 
 def now():
     return datetime.datetime.now().astimezone()
 
+scriptstart = now()
 file="Logs/"+now().date().isoformat()+" "+now().time().isoformat()[0:8].replace(':','-')+".log"
 
 def pw(*text):
-    pout = ""#str(now()) + " "
+    pout = str(now()) + " "
     with open(file,"a") as f:
-        #f.write(str(now())+" ")
+        f.write(str(now())+" ")
         for t in text:
             t=str(t)
             f.write(t+" ")
             pout += t + " "
             f.write("\n")
     print(pout)
+
+pw("Script Start")
 
 def get(url):
     global last_online_time
@@ -33,15 +37,12 @@ def get(url):
         last_online_time = now()
         return out
     except (requests.exceptions.ConnectionError) as e:
-        pw(now().ctime(), "- get Error - failed to connect")
+        pw("- get Error - failed to connect")
 
-scriptstart = now()
 statusesurl = hidden.SEQUEMATIC
 phantommedialogofile = "PhantomRadioSquare.png"
 offline = True
 last_online_time = None
-
-pw("Script Start")
 
 def alivetime():
     global scriptstart
@@ -69,7 +70,7 @@ def getstats(url=hidden.STATUSES_URL):
     try:    
         stats = json.loads(get(url).text)
     except (AttributeError) as e:
-        pw(now().ctime(), "- getstats Error - Failed to fetch source")
+        pw("- getstats Error - Failed to fetch source")
         try:
             newtitle = "- - -  Last Online: " + str(last_online_time.ctime()) + "  - - -"
         except (AttributeError) as e:
@@ -93,9 +94,9 @@ def getstats(url=hidden.STATUSES_URL):
                     description = i['server_description']
                     break
         else:
-            pw(now().ctime(), source)
+            pw(source)
     except (KeyError, NameError) as e:
-        pw(now().ctime(), "- getstats Error - Failed to parse source") 
+        pw("- getstats Error - Failed to parse source") 
         listeners = None
         description = None
     meta.configure(text=newtitle)
@@ -113,7 +114,7 @@ def listenercolours():
                 ln.configure(fg='white')
         else: ln.configure(fg='white')
     except (TypeError) as e:
-        pw(now().ctime(), "- line 85 -", e)
+        pw("- line 107 -", e)
         ln.configure(fg='white')
 
     if listeners == None:
@@ -126,7 +127,7 @@ def getstatuses():
         statuses = json.loads(get(statusesurl).text.replace("\'",""))
         offline = False
     except (AttributeError) as e:
-        pw(now().ctime(), "- getstatuses Error - Failed to fetch source")
+        pw("- getstatuses Error - Failed to fetch source")
         statuses = {'On Air':0,'Mics Live':0}
         offline = True
     
@@ -212,7 +213,7 @@ def rss(feed="http://feeds.bbci.co.uk/news/rss.xml"):
                     x += 1
                 n += 1
             except IndexError as e:
-                pw(now().ctime(), "- line 184 -", e)
+                pw("- line 210 -", e)
                 rss_out[x] = None
                 x += 1
     #pw(rss_out)    
@@ -224,7 +225,7 @@ def getweather(lat=52.9228, lon=-1.4766, units="metric", appid=hidden.WEATHER_KE
         response = json.loads(get(url).text.replace("\'",""))
         return response
     except (AttributeError) as e:
-        pw(now().ctime(), "- getweather Error - Failed to fetch source")
+        pw("- getweather Error - Failed to fetch source")
     return None    
 
 def setweather():
@@ -240,7 +241,7 @@ def setweather():
             j['temp'] = round(getweather(lat=j['lat'], lon=j['lon'])['main']['temp'],1)
         except TypeError as e:
             j['temp'] = None
-            #pw(now().ctime(),'- line 214 -',e)
+            #pw('- line 240 -',e)
 
         if j['temp'] == None:
             string += "\n"
@@ -250,7 +251,7 @@ def setweather():
         
     weather.config(text=string)
     #except (TypeError) as e:
-     #   pw(now().ctime(), "- line 214 -", e)
+     #   pw("- line 254 -", e)
       #  return None
 
 def wordclock(time=None):
@@ -449,7 +450,7 @@ try:
     try:
         news.config(text=rss_out[0]['title'])
     except (TypeError) as e:
-            pw(now().ctime(), "- news.config Error - title does not exist")
+            pw("- news.config Error - title does not exist")
             news.config(text="Feed Connection Error") 
     headlines.config(text="Latest Headlines")
     setweather()
@@ -520,7 +521,7 @@ try:
                 else:
                     newsitemno += 1
             except (TypeError) as e:
-                pw(now().ctime(), "- news.config Error - title does not exist")
+                pw("- news.config Error - title does not exist")
                 news.config(text="Feed Connection Error")
                 if newsitemno == 4:
                     newsitemno = 0
@@ -538,4 +539,9 @@ try:
 
 except:
     pw(traceback.format_exc())
-    
+finally:
+    with open("Logs/uptime.csv","a", newline='') as f:
+        writer = csv.writer(f)
+        row = [scriptstart,now(),alivetime().replace("Uptime: ","")]
+        writer.writerow(row)
+    pw("Written Uptime to File")
