@@ -1,0 +1,8 @@
+2023-04-12 11:20:07.512273+01:00 Script Start 
+2023-04-12 11:20:08.155635+01:00 Traceback (most recent call last):
+  File "C:\Users\PlayoutONE\OneDrive - University of Derby Students Union\Phantom Radio\- Technical Management\Studio-Clock\scriptv2.py", line 437, in <module>
+    image = Image.open(phantommedialogofile)
+  File "C:\Users\PlayoutONE\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 2953, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'PhantomRadioSquare.png'
+ 

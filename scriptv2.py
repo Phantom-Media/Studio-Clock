@@ -16,7 +16,8 @@ def now():
     return datetime.datetime.now().astimezone()
 
 scriptstart = now()
-file="Logs/"+now().date().isoformat()+" "+now().time().isoformat()[0:8].replace(':','-')+".log"
+location = "C:/Users/PlayoutONE/OneDrive - University of Derby Students Union/Phantom Radio/- Technical Management/Studio-Clock/"
+file=location+"Logs/"+now().date().isoformat()+" "+now().time().isoformat()[0:8].replace(':','-')+".log"
 
 def pw(*text):
     pout = str(now()) + " "
@@ -41,7 +42,7 @@ def get(url):
         pw("- get Error - failed to connect")
 
 statusesurl = hidden.SEQUEMATIC
-phantommedialogofile = "PhantomRadioSquare.png"
+phantommedialogofile = location+"PhantomRadioSquare.png"
 offline = True
 last_online_time = None
 
@@ -537,7 +538,7 @@ try:
 except:
     pw(traceback.format_exc())
 finally:
-    with open("Logs/uptime.csv","a", newline='') as f:
+    with open(location+"Logs/uptime.csv","a", newline='') as f:
         writer = csv.writer(f)
         row = [scriptstart,now(),alivetime().replace("Uptime: ","")]
         writer.writerow(row)
