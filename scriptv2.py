@@ -543,4 +543,4 @@ finally:
         writer.writerow(row)
     pw("Written Uptime to File")
     file = "gitupload.sh"
-    subprocess.call([file])
+    #subprocess.call([file])
