@@ -1,0 +1,9 @@
+2023-04-12 10:59:11.614306+01:00 Script Start 
+2023-04-12 10:59:12.267225+01:00 Traceback (most recent call last):
+  File "C:\Users\PlayoutONE\OneDrive - University of Derby Students Union\Phantom Radio\- Technical Management\Studio-Clock\scriptv2.py", line 378, in <module>
+    my_w.root.state("zoomed")
+  File "C:\Users\PlayoutONE\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 2383, in __getattr__
+    return getattr(self.tk, attr)
+AttributeError: '_tkinter.tkapp' object has no attribute 'root'
+ 
+2023-04-12 10:59:12.277222+01:00 Written Uptime to File 

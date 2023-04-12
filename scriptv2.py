@@ -10,6 +10,7 @@ from threading import Thread
 import traceback
 import csv
 import hidden
+import subprocess
 
 def now():
     return datetime.datetime.now().astimezone()
@@ -367,16 +368,12 @@ try:
     listeners
     width,height=800,800 # set the variables 
     c_width,c_height=width-5,height-5 # canvas width height
-    d=str(width)+"x"+str(height)+"+3840+0"
+    d=str(width)+"x"+str(height)+"+5760+0"
     my_w.geometry(d)
     my_w.configure(bg='black')
     my_w.title("Studio 1 Clock")
-    sw,sh = my_w.winfo_screenwidth(),my_w.winfo_screenheight()
-    #pw("screen1:",sw,sh)
-    w,h = 1600,900 
-    my_w.geometry('%sx%s+%s+%s'%(w,h,int(sw),0))
+    my_w.state("zoomed")
     #my_w.attributes("-fullscreen",True)
-    #my_w.geometry(d)
 
     c1 = tk.Canvas(my_w, width=c_width, height=c_height,bg='black',highlightthickness=0)
     c1.place(relx=0.4, rely=0.5, anchor='center')
@@ -533,7 +530,7 @@ try:
         
         c1.after(1000,clock) # timer calling recrusive after 1 second
             
-    my_w.attributes("-fullscreen", True)
+    #my_w.attributes("-fullscreen", True)
     clock() # calling to start 
     my_w.mainloop()
 
@@ -545,3 +542,5 @@ finally:
         row = [scriptstart,now(),alivetime().replace("Uptime: ","")]
         writer.writerow(row)
     pw("Written Uptime to File")
+    file = "gitupload.sh"
+    subprocess.call([file])
