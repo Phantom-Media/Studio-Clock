@@ -1,1 +1,100 @@
 2023-04-12 11:35:38.172203+01:00 Script Start 
+2023-04-13 06:38:06.921249+01:00 - get Error - failed to connect 
+2023-04-13 06:38:06.921249+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 06:38:06.922246+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:03:06.159566+01:00 - get Error - failed to connect 
+2023-04-13 07:03:06.160560+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:03:06.161115+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:03:21.174695+01:00 - get Error - failed to connect 
+2023-04-13 07:03:21.174695+01:00 - get Error - failed to connect 
+2023-04-13 07:03:21.175689+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:03:21.175689+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:10:06.498615+01:00 - get Error - failed to connect 
+2023-04-13 07:10:06.499608+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:10:06.499608+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:15:51.777900+01:00 - get Error - failed to connect 
+2023-04-13 07:15:51.778897+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 07:15:51.778897+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 15:58:01.111436+01:00 - get Error - failed to connect 
+2023-04-13 15:58:01.112433+01:00 - getweather Error - Failed to fetch source 
+2023-04-13 21:53:06.395698+01:00 - get Error - failed to connect 
+2023-04-13 21:53:06.396695+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 21:58:59.864292+01:00 - get Error - failed to connect 
+2023-04-13 21:58:59.865283+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 22:01:56.963918+01:00 - get Error - failed to connect 
+2023-04-13 22:01:56.964916+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 22:02:36.851356+01:00 - get Error - failed to connect 
+2023-04-13 22:02:36.851356+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-13 22:05:43.153907+01:00 - get Error - failed to connect 
+2023-04-13 22:05:43.155907+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-14 11:36:55.378722+01:00 - get Error - failed to connect 
+2023-04-14 11:36:55.379719+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-14 11:37:33.884672+01:00 - get Error - failed to connect 
+2023-04-14 11:37:33.884672+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-19 10:10:07.921231+01:00 - get Error - failed to connect 
+2023-04-19 10:10:07.922208+01:00 - getweather Error - Failed to fetch source 
+2023-04-23 05:37:15.891645+01:00 - get Error - failed to connect 
+2023-04-23 05:37:15.891645+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 05:37:15.919724+01:00 - get Error - failed to connect 
+2023-04-23 05:37:15.919724+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:11:06.262817+01:00 - get Error - failed to connect 
+2023-04-23 10:11:06.263791+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:11:15.823459+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:11:21.273624+01:00 - get Error - failed to connect 
+2023-04-23 10:11:21.273624+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:11:27.304132+01:00 - get Error - failed to connect 
+2023-04-23 10:11:27.304132+01:00 - getstats Error - Failed to fetch source 
+2023-04-23 10:11:27.305130+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:11:36.287417+01:00 - get Error - failed to connect 
+2023-04-23 10:11:36.288301+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:11:42.279416+01:00 - get Error - failed to connect 
+2023-04-23 10:11:42.280303+01:00 - getstats Error - Failed to fetch source 
+2023-04-23 10:11:42.280303+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:11:51.632432+01:00 - get Error - failed to connect 
+2023-04-23 10:11:51.632432+01:00 - getstats Error - Failed to fetch source 
+2023-04-23 10:11:51.633407+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:12:06.313120+01:00 - get Error - failed to connect 
+2023-04-23 10:12:06.314118+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:06.681322+01:00 - get Error - failed to connect 
+2023-04-23 10:12:06.681322+01:00 - getstats Error - Failed to fetch source 
+2023-04-23 10:12:06.682336+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:12:21.324360+01:00 - get Error - failed to connect 
+2023-04-23 10:12:21.324360+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:36.336777+01:00 - get Error - failed to connect 
+2023-04-23 10:12:36.336777+01:00 - get Error - failed to connect 
+2023-04-23 10:12:36.336777+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:36.337749+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:36.507849+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:12:42.332834+01:00 - get Error - failed to connect 
+2023-04-23 10:12:42.333832+01:00 - getstats Error - Failed to fetch source 
+2023-04-23 10:12:42.333832+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:12:45.359923+01:00 - news.config Error - title does not exist 
+2023-04-23 10:12:51.348392+01:00 - get Error - failed to connect 
+2023-04-23 10:12:51.348392+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:51.349390+01:00 - get Error - failed to connect 
+2023-04-23 10:12:51.350417+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:12:51.549194+01:00 - getstats Error - Failed to parse source 
+2023-04-23 10:13:00.374376+01:00 - news.config Error - title does not exist 
+2023-04-23 10:13:06.363747+01:00 - get Error - failed to connect 
+2023-04-23 10:13:06.363747+01:00 - get Error - failed to connect 
+2023-04-23 10:13:06.363747+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:13:06.364745+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:13:15.387362+01:00 - news.config Error - title does not exist 
+2023-04-23 10:13:21.376376+01:00 - get Error - failed to connect 
+2023-04-23 10:13:21.376376+01:00 - get Error - failed to connect 
+2023-04-23 10:13:21.376376+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:13:21.377373+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-23 10:13:30.402304+01:00 - news.config Error - title does not exist 
+2023-04-23 10:13:45.415404+01:00 - news.config Error - title does not exist 
+2023-04-23 16:58:01.145585+01:00 - get Error - failed to connect 
+2023-04-23 16:58:01.146578+01:00 - getweather Error - Failed to fetch source 
+2023-04-24 12:09:06.613431+01:00 - get Error - failed to connect 
+2023-04-24 12:09:06.614431+01:00 - getweather Error - Failed to fetch source 
+2023-04-24 18:12:31.010892+01:00 - get Error - failed to connect 
+2023-04-24 18:12:31.011906+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-25 06:28:47.973387+01:00 - get Error - failed to connect 
+2023-04-25 06:28:47.974380+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-25 06:28:47.986383+01:00 - get Error - failed to connect 
+2023-04-25 06:28:47.987346+01:00 - getstatuses Error - Failed to fetch source 
+2023-04-26 12:58:01.137484+01:00 - get Error - failed to connect 
+2023-04-26 12:58:01.139479+01:00 - getweather Error - Failed to fetch source 

@@ -337,7 +337,7 @@ try:
     cl.place(relx=0.9, rely=0.425, anchor='center')
     ln = tk.Label(my_w, text="0", bg="black", fg="white", font=("Arial", 80,  'bold'))
     ln.place(relx=0.9, rely=0.575, anchor='center')
-    meta = tk.Label(my_w, wraplength=1600, anchor='center', height=2, text="", bg="black", fg="white", font=("Arial", 40))
+    meta = tk.Label(my_w, wraplength=1600, anchor='center', height=2, text="", bg="black", fg="white", font=("Arial", 30))
     meta.place(relx=0.5835, rely=0.99, anchor='s')
     studio = tk.Label(my_w, text="Phantom Radio - Studio 1", bg="black", fg="white", font=("Arial", 50, 'bold'))
     studio.place(relx=0.5, rely=0.05, anchor='center')

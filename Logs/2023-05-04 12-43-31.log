@@ -1,0 +1,10 @@
+2023-05-04 12:43:31.312723+01:00 Script Start 
+2023-05-04 12:43:32.105939+01:00 - getstats Error - Failed to parse source 
+2023-05-04 12:43:32.106937+01:00 Traceback (most recent call last):
+  File "C:\Users\PlayoutONE\OneDrive - University of Derby Students Union\Phantom Radio\- Technical Management\Studio-Clock\scriptv2.py", line 354, in <module>
+    getstats()
+  File "C:\Users\PlayoutONE\OneDrive - University of Derby Students Union\Phantom Radio\- Technical Management\Studio-Clock\scriptv2.py", line 104, in getstats
+    meta.configure(text=newtitle)
+NameError: name 'newtitle' is not defined
+ 
+2023-05-04 12:43:32.108931+01:00 Written Uptime to File 
